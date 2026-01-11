@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+env/
+venv/
+.venv/
+dl_env/
+
+# Conda
+*.conda
+
+# ML models
+*.pkl
+*.joblib
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/
+
+# Logs
+*.log
+logs/
+
+# Data
+data/
+models/
+reports/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
