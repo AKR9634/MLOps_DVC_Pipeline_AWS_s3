@@ -5,8 +5,8 @@ stages:
     deps:
     - src/data_ingestion.py
 
-    # params:
-    # - data_ingestion.test_size
+    params:
+    - data_ingestion.test_size
 
     outs:
     - data/raw
@@ -28,8 +28,8 @@ stages:
     - data/interim
     - src/feature_engineering.py
 
-    # params:
-    # - feature_engineering.max_features
+    params:
+    - feature_engineering.max_features
 
     outs:
     - data/processed
@@ -41,9 +41,9 @@ stages:
     - data/processed
     - src/model_building.py
 
-    # params:
-    # - model_building.n_estimators
-    # - model_building.random_size
+    params:
+    - model_building.n_estimators
+    - model_building.random_state
 
     outs:
     - models/model.pkl
